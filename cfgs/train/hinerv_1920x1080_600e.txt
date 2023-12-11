@@ -1,0 +1,7 @@
+--loss 0.7 l1 0.3 ms-ssim_5x5
+--train-metric psnr --eval-metric psnr ms-ssim
+--crop-size -1 -1 --input-size 1080 1920 --patch-size 1 120 120 --cached patch
+--epochs 600 --eval-epochs 60 --log-epochs -1 --warmup-epochs 60
+--prune-epochs 120 --prune-warmup-epochs 0 --prune-ratio 0.15 --prune-weight 0.5
+--quant-epochs 60 --quant-warmup-epochs 0 --quant-lr-scale 0.1 --quant-level 8 7 6 --quant-noise 0.9
+--opt adam --lr 2e-3 --warmup-lr 2e-5 --min-lr 2e-5 --max-norm 1.0 --auto-lr-scaling true

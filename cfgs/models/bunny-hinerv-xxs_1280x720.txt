@@ -1,0 +1,7 @@
+--model HiNeRV
+--block-type convnext --channels 136 --channels-reduce 2.0 --depths 3 3 3 1
+--exps 4. 4. 4. 1. --stem-kernels 3 --kernels 3 3 3 3
+--scales-t 1 1 1 1 --scales-hw 5 2 2 2 --stem-paddings -1 -1 -1 --paddings -1 -1 -1
+--base-size -1 -1 -1 --base-grid-size 40 -1 -1 2 --base-grid-level 2 --base-grid-level-scale 2. 1. 1. 0.5
+--enc-type normalized+temp_local_grid --enc-grid-size -1 4 --enc-grid-level 3 --enc-grid-level-scale 2. 0.5 --enc-grid-depth-scale 1. 0.5
+--upsample-type trilinear --upsample-config matmul-th-w
