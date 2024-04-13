@@ -94,12 +94,10 @@ Part of the implementation is based on the code from [PyTorch Image Models](http
 ## Citation
 Please consider citing our work if you find that it is useful.
 ```
-@misc{kwan2023hinerv,
-    title={HiNeRV: Video Compression with Hierarchical Encoding based Neural Representation}, 
-    author={Ho Man Kwan and Ge Gao and Fan Zhang and Andrew Gower and David Bull},
-    year={2023},
-    eprint={2306.09818},
-    archivePrefix={arXiv},
-    primaryClass={eess.IV}
+@inproceedings{
+  author       = {Ho Man Kwan and Ge Gao and Fan Zhang and Andrew Gower and David Bull},
+  title        = {HiNeRV: Video Compression with Hierarchical Encoding-based Neural Representation},
+  booktitle    = {NeurIPS},
+  year         = {2023}
 }
 ```
